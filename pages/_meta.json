@@ -1,15 +1,18 @@
 {
   "index": "Getting Started",
+  "usecases": "Use Cases",
+  "deploying": "Deploying",
   "policies": "Policies",
   "strategies": "Strategies",
   "roles": "Roles",
   "permissions": "Permissions",
   "actions": "Actions",
+  "accounts": "Accounts",
 
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/llama",
     "newWindow": true
   }
 }
