@@ -55,7 +55,7 @@ const config: DocsThemeConfig = {
   // chat: {
   //   link: 'https://discord.com',
   // },
-  docsRepositoryBase: "https://github.com/llamaxyz/llama/-docs",
+  docsRepositoryBase: "https://github.com/llamaxyz/llama-docs",
   footer: {
     text: "Llama Docs Repository",
   },
