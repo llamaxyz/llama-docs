@@ -52,12 +52,15 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/llamaxyz/llama",
   },
-  // chat: {
-  //   link: 'https://discord.com',
-  // },
+
   docsRepositoryBase: "https://github.com/llamaxyz/llama-docs",
   footer: {
     text: "Llama Docs Repository",
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s - Llama",
+    };
   },
 };
 
