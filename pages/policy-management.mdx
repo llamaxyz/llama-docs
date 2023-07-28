@@ -3,13 +3,13 @@
 Policies are the building blocks of the Llama permissioning system.
 They allow users to create actions, assign roles, authorize strategies, and more.
 Without policies, a Llama instance will be unusable.
-Policies, roles, and permission IDs can be granted on instance deployment, but we are going to focus on policy management for active Llama instances in this section.  
+Policies, roles, and permission IDs can be granted on instance deployment, but we are going to focus on policy management for active Llama instances in this section.
 
 Let's dive into the best practices surrounding policy management.
 
 ## Key Concepts
 
-- **Policies**: Non-transferable NFTs encoded with roles and permission IDs for an individual Llama instance.
+- **Policies**: Non-transferable NFTs encoded with roles and permission IDs for an individual Llama instance .
 - **Token IDs**: The `tokenId` of a Llama policy NFT is always equal to `uint256(uint160(policyholderAddress))`.
 - **Roles**: A signifier given to one or more policyholders. Roles can be used to permission action creation, action approvals, and action disapprovals.
 - **Permission IDs**: A unique identifier that can be assigned to roles to permission action creation. Permission IDs are represented as a hash of the target contract, function selector, and strategy contract. Actions cannot be created unless a policyholder holds a role with the correct permission ID.
