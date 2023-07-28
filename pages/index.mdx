@@ -4,11 +4,11 @@ Welcome to the Llama docs! Here, you will learn everything you need to effective
 
 ## What is Llama?
 
-Llama is an onchain governance framework. It enables onchain organizations to encode access control policies, create and execute actions, and manage funds programmatically.
+Llama is an onchain governance framework for protocols. It enables protocols to encode access control policies, create and execute actions, and manage funds programmatically.
 
 ## Why Llama?
 
-We have contributed to protocols and onchain communities over the past two years and have experienced first-hand how bad governance design can lead to inefficient decision making, cumbersome processes, and lack of effective decentralization. Llama is built with those learnings in mind — it is the framework we wish we had. Llama helps protocols run their operations with 10 members or 10,000. Through Llama, functions can be permissioned granularly and access control policies can be issued to individuals, multisigs, or token voting DAO contracts.
+We have contributed to protocols over the past two years and have experienced first-hand how bad governance design can lead to inefficient decision making, cumbersome processes, and lack of effective decentralization. Llama is built with those learnings in mind — it is the framework we wish we had. Llama helps protocols run their operations with 10 members or 10,000. Through Llama, functions can be permissioned granularly and access control policies can be issued to individuals, multisigs, or token voting DAO contracts.
 
 ## Key Concepts
 
@@ -19,3 +19,7 @@ We have contributed to protocols and onchain communities over the past two years
 - **Actions**: Actions are proposed transactions initiated by policyholders that are executed onchain.
 - **Strategies**: Contracts that holds all of the logic to determine the rules and state of an action. For example, strategies determine whether or not an action is approved/disapproved, canceled, or able to be executed. They also determine details around who is allowed to cast approvals/disapprovals.
 - **Executor**: The single exit point of a Llama instance. The executor address will be the `msg.sender` for any executed actions.
+
+
+
+
