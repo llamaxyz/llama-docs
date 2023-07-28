@@ -4,9 +4,9 @@ Llama is an onchain governance framework. It uses non-transferable NFTs to encod
 
 This site was made with [Nextra](https://nextra.site).
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+[**Live Demo →**](https://llama-docs.vercel.app/)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+[![](.github/screenshot.png)](https://llama-docs.vercel.app/)
 
 ## Local Development
 
