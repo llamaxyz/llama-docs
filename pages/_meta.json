@@ -1,11 +1,8 @@
 {
   "index": "Getting Started",
-  "usecases": "Use Cases",
-  "deploying": "Deploying",
+  "instance-deployment": "Instance Deployment",
   "policies": "Policies",
   "strategies": "Strategies",
-  "roles": "Roles",
-  "permissions": "Permissions",
   "actions": "Actions",
   "accounts": "Accounts",
 
