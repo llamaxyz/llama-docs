@@ -1,9 +1,9 @@
 {
   "index": "Getting Started",
   "instance-deployment": "Instance Deployment",
-  "policies": "Policies",
+  "policy-management": "Policy Management",
   "strategies": "Strategies",
-  "actions": "Actions",
+  "action-creation": "Action Creation",
   "accounts": "Accounts",
 
   "contact": {
