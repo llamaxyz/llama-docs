@@ -2,6 +2,13 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Llama Docs" />
+      <meta property="og:description" content="Documentation for the Llama onchain smart contract governance framework" />
+    </>
+  ),
   logo: (
     <>
       <svg width="24" height="24" viewBox="0 0 228 232" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +31,7 @@ const config: DocsThemeConfig = {
   // chat: {
   //   link: 'https://discord.com',
   // },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template', //TODO
+  docsRepositoryBase: 'https://github.com/llamaxyz/llama/-docs',
   footer: {
     text: 'Llama Docs Repository',
   },
