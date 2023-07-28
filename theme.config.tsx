@@ -5,7 +5,12 @@ const config: DocsThemeConfig = {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="title" content="Llama" />
       <meta property="og:title" content="Llama Docs" />
+      <meta
+        property="description"
+        content="Documentation for the Llama onchain smart contract governance framework"
+      />
       <meta
         property="og:description"
         content="Documentation for the Llama onchain smart contract governance framework"
