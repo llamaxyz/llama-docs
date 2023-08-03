@@ -105,6 +105,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Llama Docs Repository",
   },
+  primaryHue: 268,
   useNextSeoProps() {
     return {
       titleTemplate: "%s - Llama",
