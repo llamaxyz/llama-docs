@@ -1,8 +1,7 @@
 {
-  "index": "Getting Started",
-  "action-creation": "Action Creation",
-  "strategies": "Strategies",
-  "policy-management": "Policy Management",
+  "introduction": "Introduction",
+  "framework": "Framework",
+  "contact-us": "Contact Us",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
