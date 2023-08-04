@@ -15,7 +15,7 @@ const config: DocsThemeConfig = {
         property="og:description"
         content="Documentation for the Llama onchain smart contract governance framework"
       />
-      <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+      <link rel="shortcut icon" href="/static/favicon.ico" />
     </>
   ),
   logo: (
@@ -105,6 +105,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Llama Docs Repository",
   },
+  primaryHue: 268,
   useNextSeoProps() {
     return {
       titleTemplate: "%s - Llama",
