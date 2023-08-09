@@ -1,13 +1,10 @@
 # Key Concepts
 
-- **Instance**: A Llama instance is a self managed cluster of contracts that enables on-chain access control over priveleged functions. The main parts of an instance are the `Core`, `Policy`, and `Executor` contracts.
-- **Policies**: Non-transferable NFTs encoded with roles and permissions for an individual Llama instance. They allow users to create actions, assign roles, authorize strategies, and more.
-  - **Roles**: A signifier given to one or more policyholders. Roles can be used to permission action creation, action approvals, and action disapprovals.
-  - **Permission IDs**: A unique identifier that can be assigned to roles to permission action creation. Permission IDs are represented as a hash of the target contract, function selector, and strategy contract. Actions cannot be created unless a policyholder holds a role with the correct permission ID.
-- **Actions**: Actions are proposed transactions initiated by policyholders that are executed onchain.
-- **Strategies**: Contracts that holds all of the logic to determine the rules and state of an action. For example, strategies determine whether or not an action is approved/disapproved, canceled, or able to be executed. They also determine details around who is allowed to cast approvals/disapprovals.
+- **Instance**: A standalone onchain governance and access control system. Llama instances can be used to govern a protocol or any other smart contract system.
+- **Policies**: Non-transferable NFTs that are used by an instance to define its participants' roles and permissions.
+  - **Roles**: A signifier given to one or more policyholders. Roles can have zero or more permission IDs.
+  - **Permission IDs**: A hash of a target contract, function selector, and strategy contract that represent the right to create an action. Actions cannot be created unless a policyholder holds a role with the correct permission ID.
+- **Actions**: Proposed, executable transactions that can be initiated by policyholders.
+- **Strategies**: Contracts that set the rules for how an action goes from creation to execution.
 - **Executor**: The single exit point of a Llama instance. The executor address will be the `msg.sender` for any executed actions.
-
-## System Architecture
-
-![Llama overview](../diagrams/llama-overview.png)
+- **Accounts**: Contracts deployed directly by Llama instances to manage onchain assets.

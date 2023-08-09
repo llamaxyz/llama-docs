@@ -1,7 +1,7 @@
 {
-  "introduction": "Introduction",
   "instance-deployment": "Instance Deployment",
   "actions": "Actions",
   "policies": "Policies",
-  "strategies": "Strategies"
+  "strategies": "Strategies",
+  "accounts": "Accounts"
 }
