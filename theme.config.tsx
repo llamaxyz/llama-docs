@@ -1,32 +1,20 @@
-import React from "react";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import React from 'react'
+import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="title" content="Llama" />
-      <meta property="og:title" content="Llama Docs" />
-      <meta
-        property="description"
-        content="Documentation for the Llama onchain smart contract governance framework"
-      />
-      <meta
-        property="og:description"
-        content="Documentation for the Llama onchain smart contract governance framework"
-      />
+      <meta property="title" content="Llama Documentation" />
+      <meta property="og:title" content="Llama Documentation" />
+      <meta property="description" content="Learn how Llama powers onchain governance" />
+      <meta property="og:description" content="Learn how Llama powers onchain governance" />
       <link rel="shortcut icon" href="/static/favicon.ico" />
     </>
   ),
   logo: (
     <>
-      <svg
-        width="89"
-        height="28"
-        viewBox="0 0 89 28"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="89" height="28" viewBox="0 0 89 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M3.0543 18.4836C3.05685 18.2679 3.14276 18.0616 3.29402 17.908C3.44526 17.7544 3.65009 17.6653 3.86553 17.6596H14.6671C15.177 17.6606 15.682 17.5611 16.1534 17.3667C16.6248 17.1724 17.0533 16.8869 17.4143 16.5267C17.7754 16.1665 18.062 15.7386 18.2577 15.2674C18.4534 14.7963 18.5545 14.2912 18.555 13.781V0H15.4987V13.781C15.4961 13.9967 15.4102 14.2029 15.2589 14.3566C15.1077 14.5102 14.9029 14.5993 14.6874 14.605H3.87567C2.84811 14.6061 1.86294 15.0151 1.13634 15.7422C0.409745 16.4694 0.00107373 17.4553 0 18.4836V27.9963H3.0543V18.4836Z"
           fill="url(#paint0_linear_3309_5423)"
@@ -98,19 +86,19 @@ const config: DocsThemeConfig = {
     </>
   ),
   project: {
-    link: "https://github.com/llamaxyz/llama",
+    link: 'https://github.com/llamaxyz/llama',
   },
 
-  docsRepositoryBase: "https://github.com/llamaxyz/llama-docs",
+  docsRepositoryBase: 'https://github.com/llamaxyz/llama-docs',
   footer: {
-    text: "Llama Docs Repository",
+    text: '© 2023 Llama Ranch, Inc.',
   },
   primaryHue: 268,
   useNextSeoProps() {
     return {
-      titleTemplate: "%s - Llama",
-    };
+      titleTemplate: '%s | Llama',
+    }
   },
-};
+}
 
-export default config;
+export default config
