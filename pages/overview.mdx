@@ -10,7 +10,7 @@ Llama instances can adapt to a changing environment by incrementally adding new 
 
 ## How does Llama work?
 
-![Llama Overview](../../diagrams/llama-overview.png)
+![Llama Overview](../diagrams/llama-overview.png)
 
 A Llama instance consists of a modular system of smart contracts with an immutable core and interchangeable periphery. `LlamaCore` and `LlamaPolicy` work together with strategy and guard contracts to establish and enforce the rules for how actions progress from creation to execution. A successful action execution results in the `LlamaExecutor` calling the specified target contract with the agreed upon transaction calldata. Since the executor is the single exit point of an instance, ownership of external functions only needs to be set once.
 
