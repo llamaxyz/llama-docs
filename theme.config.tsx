@@ -89,7 +89,7 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/llamaxyz/llama',
   },
 
-  docsRepositoryBase: 'https://github.com/llamaxyz/llama-docs',
+  docsRepositoryBase: 'https://github.com/llamaxyz/llama-docs/tree/main',
   footer: {
     text: '© 2023 Llama Ranch, Inc.',
   },
