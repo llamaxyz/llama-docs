@@ -1,5 +1,6 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import Logo from "./components/Logo";
 
 const config: DocsThemeConfig = {
   head: (
@@ -7,98 +8,35 @@ const config: DocsThemeConfig = {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="title" content="Llama Documentation" />
       <meta property="og:title" content="Llama Documentation" />
-      <meta property="description" content="Learn how Llama powers onchain governance" />
-      <meta property="og:description" content="Learn how Llama powers onchain governance" />
+      <meta
+        property="description"
+        content="Learn how Llama powers onchain governance"
+      />
+      <meta
+        property="og:description"
+        content="Learn how Llama powers onchain governance"
+      />
       <link rel="shortcut icon" href="/static/favicon.ico" />
     </>
   ),
-  logo: (
-    <>
-      <svg width="89" height="28" viewBox="0 0 89 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M3.0543 18.4836C3.05685 18.2679 3.14276 18.0616 3.29402 17.908C3.44526 17.7544 3.65009 17.6653 3.86553 17.6596H14.6671C15.177 17.6606 15.682 17.5611 16.1534 17.3667C16.6248 17.1724 17.0533 16.8869 17.4143 16.5267C17.7754 16.1665 18.062 15.7386 18.2577 15.2674C18.4534 14.7963 18.5545 14.2912 18.555 13.781V0H15.4987V13.781C15.4961 13.9967 15.4102 14.2029 15.2589 14.3566C15.1077 14.5102 14.9029 14.5993 14.6874 14.605H3.87567C2.84811 14.6061 1.86294 15.0151 1.13634 15.7422C0.409745 16.4694 0.00107373 17.4553 0 18.4836V27.9963H3.0543V18.4836Z"
-          fill="url(#paint0_linear_3309_5423)"
-        />
-        <path
-          d="M19.9061 2.62599H19.7701L19.8999 2.7559V5.59734H22.7109L24.0292 6.92876C23.1533 7.10776 22.3661 7.58374 21.8004 8.27633C21.2346 8.96892 20.9252 9.83566 20.924 10.7302V28H23.9662V10.7261C23.9694 10.5086 24.0571 10.3008 24.2108 10.1469C24.3646 9.99309 24.5723 9.90526 24.7896 9.90211H25.2581C27.0529 9.90211 27.6615 8.90152 27.8419 8.4814C28.0224 8.06126 28.3003 6.91455 27.0308 5.63994L24.0534 2.63615H23.1265"
-          fill="url(#paint1_linear_3309_5423)"
-        />
-        <path
-          d="M11.828 26.4971C12.4952 26.4965 13.1559 26.6289 13.7715 26.8864C14.3871 27.1439 14.9453 27.5214 15.4137 27.9969H19.1109C18.4455 26.6309 17.4099 25.4796 16.1222 24.6742C14.8345 23.8688 13.3465 23.4418 11.828 23.4418C10.3095 23.4418 8.82159 23.8688 7.53388 24.6742C6.2462 25.4796 5.21058 26.6309 4.54515 27.9969H8.24237C8.71076 27.5214 9.269 27.1439 9.88461 26.8864C10.5002 26.6289 11.1608 26.4965 11.828 26.4971Z"
-          fill="url(#paint2_linear_3309_5423)"
-        />
-        <path
-          d="M41.0417 10.1582H36.5032V12.0572H38.2502V21.9317H36V23.8306H42.7033V21.9317H41.0417V10.1582Z"
-          fill="#151515"
-        />
-        <path
-          d="M49.5534 10.1582H45.015V12.0572H46.7619V21.9317H44.5117V23.8306H51.215V21.9317H49.5534V10.1582Z"
-          fill="#151515"
-        />
-        <path
-          d="M55.8263 17.0593C55.9211 16.0813 56.5953 15.5591 57.8107 15.5591C59.0259 15.5591 59.6337 16.0813 59.6337 17.2112V17.4866L56.2915 17.8948C54.307 18.1417 52.75 19.0057 52.75 20.9521C52.75 22.889 54.2217 23.9999 56.4529 23.9999C58.3235 23.9999 59.1495 23.2879 59.5387 22.6801H59.7286V23.829H62.3301V17.6005C62.3301 14.885 60.5832 13.6602 57.8678 13.6602C55.1331 13.6602 53.4622 14.885 53.2627 16.7745V17.0593H55.8263ZM55.4939 20.8288C55.4939 20.0785 56.0637 19.7179 56.8898 19.6038L59.6337 19.243V19.6704C59.6337 21.275 58.5702 22.082 57.108 22.082C56.0825 22.082 55.4939 21.5883 55.4939 20.8288Z"
-          fill="#151515"
-        />
-        <path
-          d="M64.4413 23.8303H67.0048V17.4309C67.0048 16.2061 67.6505 15.6744 68.5526 15.6744C69.3596 15.6744 69.7583 16.1396 69.7583 16.9277V23.8303H72.322V17.4309C72.322 16.2061 72.9676 15.6744 73.86 15.6744C74.6766 15.6744 75.0659 16.1396 75.0659 16.9277V23.8303H77.639V16.5764C77.639 14.7724 76.4996 13.6995 74.7621 13.6995C73.2049 13.6995 72.4834 14.3736 72.0655 15.1142H71.8756C71.5908 14.4685 70.8881 13.6995 69.445 13.6995C68.0303 13.6995 67.4132 14.2881 67.0714 14.8863H66.8814V13.8893H64.4413V23.8303Z"
-          fill="#151515"
-        />
-        <path
-          d="M82.1739 17.0593C82.269 16.0813 82.9429 15.5591 84.1584 15.5591C85.3738 15.5591 85.9814 16.0813 85.9814 17.2112V17.4866L82.6391 17.8948C80.6547 18.1417 79.0977 19.0057 79.0977 20.9521C79.0977 22.889 80.5693 23.9999 82.8005 23.9999C84.6711 23.9999 85.4972 23.2879 85.8865 22.6801H86.0762V23.829H88.6778V17.6005C88.6778 14.885 86.9308 13.6602 84.2154 13.6602C81.4808 13.6602 79.8098 14.885 79.6104 16.7745V17.0593H82.1739ZM81.8416 20.8288C81.8416 20.0785 82.4114 19.7179 83.2374 19.6038L85.9814 19.243V19.6704C85.9814 21.275 84.9179 22.082 83.4557 22.082C82.4304 22.082 81.8416 21.5883 81.8416 20.8288Z"
-          fill="#151515"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_3309_5423"
-            x1="13.9976"
-            y1="28"
-            x2="13.3497"
-            y2="0.015"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#B10BFF" />
-            <stop offset="1" stop-color="#6A45EC" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_3309_5423"
-            x1="13.9976"
-            y1="28"
-            x2="13.3497"
-            y2="0.015"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#B10BFF" />
-            <stop offset="1" stop-color="#6A45EC" />
-          </linearGradient>
-          <linearGradient
-            id="paint2_linear_3309_5423"
-            x1="13.9976"
-            y1="28"
-            x2="13.3497"
-            y2="0.015"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#B10BFF" />
-            <stop offset="1" stop-color="#6A45EC" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </>
-  ),
+
+  logo: <Logo />,
   project: {
-    link: 'https://github.com/llamaxyz/llama',
+    link: "https://github.com/llamaxyz/llama",
   },
 
-  docsRepositoryBase: 'https://github.com/llamaxyz/llama-docs/tree/main',
+  docsRepositoryBase: "https://github.com/llamaxyz/llama-docs/tree/main",
   footer: {
-    text: '© 2023 Llama Ranch, Inc.',
+    text: `© ${new Date().getFullYear()} Llama Ranch, Inc.`,
   },
-  primaryHue: 268,
+
+  primaryHue: { light: 268, dark: 272 },
+
   useNextSeoProps() {
     return {
-      titleTemplate: '%s | Llama',
-    }
+      titleTemplate: "%s | Llama",
+    };
   },
-}
+};
 
-export default config
+export default config;
