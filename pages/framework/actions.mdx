@@ -47,8 +47,6 @@ enum ActionState {
 }
 ```
 
-Lets dive into each state and what they mean.
-
 - **Active:** The default state after an action has been created. This is when policyholders can approve the action. If the action is not approved by the end of the approval period, the action will enter the `Failed` state.
 - **Canceled:** The action creator has the opportunity to cancel the action at any time during the action lifecycle. Once an action has been canceled, it cannot be executed. Reached by successfully calling `cancelAction`.
 - **Failed:** An action reaches the failed state if it does not reach the approval quorum by the end of the approval period, or if the action gets disapproved during the queuing period. Once an action has reached the failed state, it cannot be executed.
